@@ -1,5 +1,8 @@
 import hash_module
+import test_generator
 
+txt_generator = test_generator.TxtGenerator('test_data.txt')
+txt_generator.generate(288)
 
 table = hash_module.HashTable()
 with open('test_data.txt', 'r') as file:
